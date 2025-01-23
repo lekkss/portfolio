@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import { BsGithub, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsTiktok,
+  BsTwitterX,
+  BsYoutube,
+} from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,16 +53,40 @@ const Navbar = () => {
 
       <ul className="hidden md:flex gap-5">
         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-red-500 hover:opacity-100">
-          <BsYoutube />
+          <a
+            href="https://www.tiktok.com/@lekksz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsTiktok />
+          </a>
         </li>
         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
-          <BsLinkedin />
+          <a
+            href="https://www.linkedin.com/in/afolabi-oluwasegun-lekan/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsLinkedin />
+          </a>
         </li>
         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-sky-500 hover:opacity-100">
-          <BsTwitterX />
+          <a
+            href="https://www.x.com/lekksz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsTwitterX />
+          </a>
         </li>
         <li className="cursor-pointer text-xl opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
-          <BsGithub />
+          <a
+            href="https://www.github.com/lekkss"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsGithub />
+          </a>
         </li>
       </ul>
       {/* Menu */}
